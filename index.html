@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container"> 
+        <div class="header">
+            <div class="logo">The<span>fashion</span></div>
+            <div class="nav-link">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">shop now</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">about</a></li> 
+                    <li><button class="btn">sign up</button></li>
+                    <li><button class="btn">login</button></li>
+                </ul>
+            </div>
+            <img src="menu.png" alt="" class="menu-btn">
+        </div>
+        
+        <div class="content">
+            <div class="content-1">
+                <h1> highest quality collection </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Eos alias rem obcaecati!</p>
+                <button class="btn-1">shop now</button>
+            </div>
+            
+            <div class="content-2">
+                <div class="image1"></div>
+                <div class="image2"></div>
+                <div class="image3"></div>
+                <div class="image4"></div>
+            </div>
+        </div>
+    </div>
+<SCript>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the menu button and navigation links
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLink = document.querySelector('.nav-link ul');
+    
+        // Add click event listener to the menu button
+        menuBtn.addEventListener('click', function() {
+            console.log('Menu button clicked');
+    
+            // Toggle the 'active' class on the navigation links
+            navLink.classList.toggle('active');
+        });
+    });
+    
+
+
+    
+
+
+
+
+    </script>
+</body>
+</html>
